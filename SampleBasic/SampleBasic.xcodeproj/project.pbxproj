@@ -22,9 +22,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Assets.xcassets,
-				Renderer.swift,
 				SampleViewController.swift,
-				Shaders.metal,
 			);
 			target = 633D55712E044CC000826FB8 /* SampleBasic iOS */;
 		};
@@ -32,39 +30,18 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Assets.xcassets,
-				Renderer.swift,
 				SampleViewController.swift,
-				Shaders.metal,
 			);
 			target = 633D55822E044CC000826FB8 /* SampleBasic macOS */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		633D55992E044CC000826FB8 /* Exceptions for "SampleBasic Shared" folder in "Copy Bundle Resources" phase from "SampleBasic iOS" target */ = {
-			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
-			buildPhase = 633D55702E044CC000826FB8 /* Resources */;
-			membershipExceptions = (
-				ShaderTypes.h,
-			);
-		};
-		633D559E2E044CC000826FB8 /* Exceptions for "SampleBasic Shared" folder in "Copy Bundle Resources" phase from "SampleBasic macOS" target */ = {
-			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
-			buildPhase = 633D55812E044CC000826FB8 /* Resources */;
-			membershipExceptions = (
-				ShaderTypes.h,
-			);
-		};
-/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		633D55692E044CBD00826FB8 /* SampleBasic Shared */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				633D55952E044CC000826FB8 /* Exceptions for "SampleBasic Shared" folder in "SampleBasic iOS" target */,
-				633D55992E044CC000826FB8 /* Exceptions for "SampleBasic Shared" folder in "Copy Bundle Resources" phase from "SampleBasic iOS" target */,
 				633D559A2E044CC000826FB8 /* Exceptions for "SampleBasic Shared" folder in "SampleBasic macOS" target */,
-				633D559E2E044CC000826FB8 /* Exceptions for "SampleBasic Shared" folder in "Copy Bundle Resources" phase from "SampleBasic macOS" target */,
 			);
 			path = "SampleBasic Shared";
 			sourceTree = "<group>";
@@ -279,7 +256,6 @@
 				PRODUCT_NAME = SampleBasic;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "SampleBasic Shared/ShaderTypes.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,7 +286,6 @@
 				PRODUCT_NAME = SampleBasic;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "SampleBasic Shared/ShaderTypes.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -343,7 +318,6 @@
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "SampleBasic Shared/ShaderTypes.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -374,7 +348,6 @@
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "SampleBasic Shared/ShaderTypes.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

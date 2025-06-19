@@ -5,6 +5,8 @@
 //  Created by David Gavilan Ruiz on 19/06/2025.
 //
 import VidEngine
+import Foundation
+import simd
 
 class SampleViewController: VidController {
     var cube: CubePrimitive?
