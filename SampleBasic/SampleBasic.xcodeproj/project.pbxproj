@@ -6,9 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		633D55C22E044EEE00826FB8 /* VidEngine in Frameworks */ = {isa = PBXBuildFile; productRef = 633D55C12E044EEE00826FB8 /* VidEngine */; };
+		633D55C82E044F6500826FB8 /* VidEngine in Frameworks */ = {isa = PBXBuildFile; productRef = 633D55C72E044F6500826FB8 /* VidEngine */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		633D55722E044CC000826FB8 /* SampleBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		633D55832E044CC000826FB8 /* SampleBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		633D55BF2E044E7D00826FB8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -17,6 +23,7 @@
 			membershipExceptions = (
 				Assets.xcassets,
 				Renderer.swift,
+				SampleViewController.swift,
 				Shaders.metal,
 			);
 			target = 633D55712E044CC000826FB8 /* SampleBasic iOS */;
@@ -26,6 +33,7 @@
 			membershipExceptions = (
 				Assets.xcassets,
 				Renderer.swift,
+				SampleViewController.swift,
 				Shaders.metal,
 			);
 			target = 633D55822E044CC000826FB8 /* SampleBasic macOS */;
@@ -78,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				633D55C82E044F6500826FB8 /* VidEngine in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				633D55C22E044EEE00826FB8 /* VidEngine in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,9 +104,11 @@
 		633D55642E044CBD00826FB8 = {
 			isa = PBXGroup;
 			children = (
+				633D55BF2E044E7D00826FB8 /* README.md */,
 				633D55692E044CBD00826FB8 /* SampleBasic Shared */,
 				633D55742E044CC000826FB8 /* SampleBasic iOS */,
 				633D55842E044CC000826FB8 /* SampleBasic macOS */,
+				633D55C62E044F6500826FB8 /* Frameworks */,
 				633D55732E044CC000826FB8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +120,13 @@
 				633D55832E044CC000826FB8 /* SampleBasic.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		633D55C62E044F6500826FB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +149,7 @@
 			);
 			name = "SampleBasic iOS";
 			packageProductDependencies = (
+				633D55C72E044F6500826FB8 /* VidEngine */,
 			);
 			productName = "SampleBasic iOS";
 			productReference = 633D55722E044CC000826FB8 /* SampleBasic.app */;
@@ -152,6 +172,7 @@
 			);
 			name = "SampleBasic macOS";
 			packageProductDependencies = (
+				633D55C12E044EEE00826FB8 /* VidEngine */,
 			);
 			productName = "SampleBasic macOS";
 			productReference = 633D55832E044CC000826FB8 /* SampleBasic.app */;
@@ -184,6 +205,9 @@
 			);
 			mainGroup = 633D55642E044CBD00826FB8;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				633D55C02E044EEE00826FB8 /* XCRemoteSwiftPackageReference "VidEngine" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 633D55732E044CC000826FB8 /* Products */;
 			projectDirPath = "";
@@ -502,6 +526,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		633D55C02E044EEE00826FB8 /* XCRemoteSwiftPackageReference "VidEngine" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/endavid/VidEngine";
+			requirement = {
+				branch = develop/packageify;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		633D55C12E044EEE00826FB8 /* VidEngine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 633D55C02E044EEE00826FB8 /* XCRemoteSwiftPackageReference "VidEngine" */;
+			productName = VidEngine;
+		};
+		633D55C72E044F6500826FB8 /* VidEngine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 633D55C02E044EEE00826FB8 /* XCRemoteSwiftPackageReference "VidEngine" */;
+			productName = VidEngine;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 633D55652E044CBD00826FB8 /* Project object */;
 }
