@@ -15,6 +15,7 @@
 		633D55722E044CC000826FB8 /* SampleBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		633D55832E044CC000826FB8 /* SampleBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		633D55BF2E044E7D00826FB8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = SOURCE_ROOT; };
+		6358818530880ED5004C0111 /* SampleBasic-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SampleBasic-iOS-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -81,6 +82,7 @@
 		633D55642E044CBD00826FB8 = {
 			isa = PBXGroup;
 			children = (
+				6358818530880ED5004C0111 /* SampleBasic-iOS-Info.plist */,
 				633D55BF2E044E7D00826FB8 /* README.md */,
 				633D55692E044CBD00826FB8 /* SampleBasic Shared */,
 				633D55742E044CC000826FB8 /* SampleBasic iOS */,
@@ -240,6 +242,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7JBVTX94L2;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SampleBasic-iOS-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -270,6 +273,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7JBVTX94L2;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SampleBasic-iOS-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
