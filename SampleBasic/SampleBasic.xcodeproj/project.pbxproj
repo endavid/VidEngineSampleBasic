@@ -23,6 +23,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Assets.xcassets,
+				Resources/outdoor02b.jpg,
 				SampleViewController.swift,
 			);
 			target = 633D55712E044CC000826FB8 /* SampleBasic iOS */;
@@ -31,6 +32,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Assets.xcassets,
+				Resources/outdoor02b.jpg,
 				SampleViewController.swift,
 			);
 			target = 633D55822E044CC000826FB8 /* SampleBasic macOS */;

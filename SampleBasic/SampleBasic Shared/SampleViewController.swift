@@ -20,6 +20,13 @@ class SampleViewController: VidController {
         self.cube = cube
         spawnPlanes(count: 5)
         initTextDemo()
+        Task {
+            do {
+                try await initSky()
+            } catch {
+                NSLog("Error initializing sky: \(error)")
+            }
+        }
     }
     
     func spawnPlanes(count: Int) {
@@ -56,6 +63,13 @@ class SampleViewController: VidController {
         } else {
             NSLog("Error initializing FontAtlas")
         }
+    }
+    
+    func initSky() async throws {
+        let sky = EnvironmentSphere(isInterior: false, widthSegments: 20, heightSegments: 10)
+        try await sky.setCubemapTexture(renderer: renderer, resource: "outdoor02b.jpg", bundle: Bundle.main, addToCache: false)
+        sky.transform = Transform(position: simd_float3(1.5,1,-6), scale: 1)
+        sky.queue(renderer)
     }
     
     override func update(_ elapsed: TimeInterval) {
